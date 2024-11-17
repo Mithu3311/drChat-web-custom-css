@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #0f4c75;
+  margin: 1rem;
+  text-align: center;
+  font-family: serif;
+  font-weight: 100;
+}
+
+/* Header Style */
+.header {
+  background-color: #0f4c75; /* Cyan shade */
+  height: 3.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.header .logo {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.header .menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.header .menu a {
+  margin: 0;
+}
+
+.header .button {
+  margin-right: 1rem;
+  width: 5rem;
+  height: 2rem;
+}
+
+.header .menu a:hover {
+  color: #cccccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .header .logo {
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .header .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .header .menu a {
+    font-size: 0.9rem;
+  }
+
+  .header .button {
+    margin: 1rem auto 0;
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .menu a {
+    font-size: 0.8rem;
+  }
+
+  .header .button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Cards Design  */
+
+.text-box {
+  text-align: left;
+  margin-bottom: 1rem;
+  margin: 5rem;
+}
+
+
+.text-box h3 {
+  font-family: 'Arial', sans-serif; 
+  font-weight: 600; 
+  font-size: 1.125rem; 
+  color: #0f4c75; 
+  margin-bottom: 0.5rem; 
+}
+.text-box p {
+  color: #0f4c75;
+  text-wrap: wrap;
+}
+
+/* Medium to larger screens */
+@media (min-width: 768px) {
+  .text-left h2 {
+    font-size: 1.25rem; 
+  }
+}
+
+.text-left p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem; 
+  text-align: justify; 
+  line-height: 1.6; 
+  color: #333; 
+  margin-right: 0; 
+}
+
+/* Medium to larger screens */
+@media (min-width: 768px) {
+  .text-left p {
+    margin-right: 1rem; /* Add padding on larger screens for better spacing */
+  }
+}
+
+
+
+/* contact.css */
+
+.contact-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-title {
+  font-size: 2rem;
+  color: #0f4c75;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0f4c75;
+  box-shadow: 0 0 5px rgba(15, 76, 117, 0.5);
+}
+
+.contact-button {
+  background-color: #0f4c75;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #08415c;
+}
+
+/* about.css */
+
+.about-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #0f4c75;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.about-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-card h2 {
+  font-size: 1.5rem;
+  color: #0f4c75;
+  margin-bottom: 1rem;
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* login.css */
+
+.login-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.login-title {
+  font-size: 2rem;
+  color: #0f4c75;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0f4c75;
+  box-shadow: 0 0 5px rgba(15, 76, 117, 0.5);
+}
+
+.login-button {
+  background-color: #0f4c75;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* signup.css */
+
+.signup-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.signup-title {
+  font-size: 1.8rem;
+  color: #0f4c75;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0f4c75;
+  box-shadow: 0 0 5px rgba(15, 76, 117, 0.5);
+}
+
+.signup-button {
+  background-color: #0f4c75;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+  background-color: #08415c;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 1.5rem;
+  }
+
+  .signup-title {
+    font-size: 1.5rem;
+  }
+
+  .signup-button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
+
+/* background.css */
+
+.image {
+  width: 100%;
+  height: fit-content; /* Full viewport height */
+  background-image: url('/path-to-your-image.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  display: flex; /* Allows content alignment */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Centers text inside */
+  color: white; /* Default text color for readability */
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .background-container {
+    background-size: contain; /* Adjust image size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .background-container {
+    padding: 1rem; /* Adds padding for content on very small screens */
+  }
+}
+
